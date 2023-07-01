@@ -3,6 +3,13 @@ html {
   color: white;
 }
 
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 430px;
+}
+
 .square {
   background-color: white;
   width: 100px;
