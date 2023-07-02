@@ -15,17 +15,21 @@ body {
   display: flex;
   width: 640px;
   height: 640px;
-  /* gap: 1px; */
+  gap: 1px;
 }
 
 .column {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  /* gap: 1px; */
+  gap: 1px;
 }
 
 .square {
-  background-color: white;
+  background-color: darkslategray;
   flex-grow: 1;
+}
+
+.square.filled {
+  background-color: white;
 }

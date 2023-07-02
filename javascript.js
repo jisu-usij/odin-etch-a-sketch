@@ -1,15 +1,18 @@
 const container = document.querySelector('.grid-container');
 
-// Add squares to the grid
-for (let i = 0; i < 16; i++) {
-  const column = document.createElement('div');
-  column.classList.add('column');
+function createGrid(n) {
+  for (let i = 0; i < n; i++) {
+    const column = document.createElement('div');
+    column.classList.add('column');
 
-  for (let i = 0; i < 16; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
-    column.appendChild(square);
+    for (let i = 0; i < n; i++) {
+      const square = document.createElement('div');
+      square.classList.add('square');
+      column.appendChild(square);
+    }
+
+    container.appendChild(column);
   }
-
-  container.appendChild(column);
 }
+
+createGrid(16);
